@@ -18,5 +18,3 @@ router.put('/:id', validate(providerSchema), updateProvider);
 router.delete('/:id', deleteProvider);
 
 module.exports = router;
-
-

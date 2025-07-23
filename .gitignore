@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# Dotenv config
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Output
+dist/
+build/
+
+# VSCode settings
+.vscode/
+
+# Sequelize CLI (si se usa)
+.sequelize*
+
+# Coverage reports (si hacés tests)
+coverage/
+
+# OS / Editor stuff
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tgz

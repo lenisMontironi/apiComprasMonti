@@ -1,6 +1,6 @@
 # 🛒 API Compras Montironi
 
-API backend desarrollada en **Node.js** con **Express** y **Sequelize**, conectada a una base de datos **SQL Server**, para la gestión de compras.
+API backend desarrollada en **Node.js** con **Express** y **Sequelize**, conectada a una base de datos **MySQL**, para la gestión de compras.
 
 ---
 
@@ -8,7 +8,7 @@ API backend desarrollada en **Node.js** con **Express** y **Sequelize**, conecta
 
 - **Node.js:** >= 18
 - **npm:** >= 9 (o Yarn)
-- **Base de datos:** SQL Server
+- **Base de datos:** MySQL
 - Archivo `.env` configurado con credenciales de la base de datos.
 
 ---
@@ -31,17 +31,13 @@ npm install
 npm run dev
 ```
 
-El servidor se iniciará en:  
-**http://localhost:3000**
-
-
 ---
 
 ## 🛠 Tecnologías utilizadas
 
 - **Node.js** + **Express** (API REST)
 - **Sequelize** (ORM)
-- **SQL Server** (Base de datos)
+- **MySQL** (Base de datos)
 - **Dotenv** (Variables de entorno)
 - **Nodemon** (Entorno de desarrollo)
 

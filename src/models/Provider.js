@@ -5,7 +5,6 @@ const Provider = sequelize.define(
   "Provider",
   {
     id: {
-      field: "id",
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
@@ -27,7 +26,7 @@ const Provider = sequelize.define(
     },
   },
   {
-    tableName: "Proveedores",
+    tableName: "proveedores",
     timestamps: false,
   }
 );

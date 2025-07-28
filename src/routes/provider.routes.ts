@@ -1,15 +1,15 @@
-const express = require('express');
-const router = express.Router();
-const {
+import { Router } from 'express';
+import {
   getAllProviders,
   getProviderById,
   createProvider,
   updateProvider,
   deleteProvider,
-} = require('../controllers/provider.controller');
+} from '../controllers/provider.controller';
+import validate from '../middlewares/validate';
+import providerSchema from '../schemas/provider.schema';
 
-const validate = require('../middlewares/validate');
-const providerSchema = require('../schemas/provider.schema');
+const router = Router();
 
 router.get('/', getAllProviders);
 router.get('/:id', getProviderById);
@@ -17,4 +17,4 @@ router.post('/', validate(providerSchema), createProvider);
 router.put('/:id', validate(providerSchema), updateProvider);
 router.delete('/:id', deleteProvider);
 
-module.exports = router;
+export default router;

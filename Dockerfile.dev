@@ -1,0 +1,16 @@
+# Dockerfile (Desarrollo)
+FROM node:20
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+# Dale permiso de ejecución al script
+RUN chmod +x wait-for-it.sh
+
+CMD ["npm", "run", "dev"]
+
+

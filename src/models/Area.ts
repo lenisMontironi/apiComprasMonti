@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+import { sequelize } from '../config/database';
 
 const Area = sequelize.define('Area', {
   id: {
